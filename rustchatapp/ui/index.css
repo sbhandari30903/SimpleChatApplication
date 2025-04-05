@@ -3,7 +3,7 @@ body {
 	font-family: Arial, sans-serif;
 	margin: 20px;
 	height: 100vh;
-	overflow: hidden;
+	overflow: none;
 	display: flex;
 	flex-direction: column;
 }
@@ -140,12 +140,12 @@ body {
 	font-size: 20px;
 	border: none;
 	font-weight: bold;
+	margin-left: 5px;
 }
 
 #chatForm{
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	text-align: center;
 }
 
