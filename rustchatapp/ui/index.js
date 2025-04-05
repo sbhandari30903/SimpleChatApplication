@@ -199,6 +199,7 @@ function sendMessage(e) {
 
 	var messageElement = document.createElement("div");
 	messageElement.classList.add("message");
+	messageElement.classList.add("message-right");
 	messageElement.textContent = `You: ${messageContent}`;
 	document.getElementById("messages").appendChild(messageElement);
 
