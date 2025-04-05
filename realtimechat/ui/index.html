@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Real-Time Chat</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<h1>Real-Time Chat</h1>
+
+		<!-- Registration Section -->
+		<div class="section" id="registerSection">
+			<h2>Register</h2>
+			<input type="text" id="registerFirstName" placeholder="First Name" />
+			<input type="text" id="registerLastName" placeholder="Last Name" />
+			<button onclick="registerUser()">Register</button>
+		</div>
+
+		<!-- Login Section -->
+		<div class="section" id="loginSection">
+			<h2>Login</h2>
+			<input type="text" id="loginFirstName" placeholder="First Name" />
+			<input type="text" id="loginLastName" placeholder="Last Name" />
+			<button onclick="loginUser()">Login</button>
+		</div>
+
+		<!-- Chat Section -->
+		<div class="section" id="chatSection" style="display: none">
+			<h2>Chat</h2>
+			<div id="loggedInUser"></div>
+			<div class="chat-container">
+				<div id="userList">
+					<h3>Users</h3>
+					<ul id="userListItems"></ul>
+				</div>
+				<div id="chatBox">
+					<div id="messages"></div>
+					<form id="chatForm">
+						<input
+							type="text"
+							id="messageInput"
+							placeholder="Enter message"
+							required
+						/>
+						<button type="submit" id="sendButton">Send</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script src="index.js"></script>
+	</body>
+</html>
