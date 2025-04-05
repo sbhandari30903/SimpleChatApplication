@@ -1,0 +1,27 @@
+[package]
+name = "rustchatapp"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.10.2"
+actix-web-actors = "4.3.1+deprecated"
+actix = "0.13"
+actix-cors = "0.7"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["full"] }
+lazy_static = "1.4"
+chrono = { version = "0.4", features = ["serde"] }
+env_logger = "0.10"
+log = "0.4"
+url = "2.2"  # Add this line
+
+
+
+
+
+
+

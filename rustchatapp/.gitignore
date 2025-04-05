@@ -1,0 +1,15 @@
+# Ignore build directory
+/target/
+
+# Ignore Cargo's lock file (optional, keep it if it's a binary project)
+Cargo.lock
+
+# Ignore Rust's native build output
+*.rs.bk
+
+# Ignore the ui folder if it's not needed in version control
+/ui/
+
+# Ignore editor's config files, etc.
+.idea/
+.vscode/
