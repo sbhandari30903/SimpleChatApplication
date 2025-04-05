@@ -7,8 +7,6 @@ Cargo.lock
 # Ignore Rust's native build output
 *.rs.bk
 
-# Ignore the ui folder if it's not needed in version control
-/ui/
 
 # Ignore editor's config files, etc.
 .idea/

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Real-Time Chat</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<h1>Real-Time Chat</h1>
+
+		<div class="container">
+		<!-- Registration Section -->
+		<div class="section" id="registerSection">
+			<h2>Register</h2>
+			<input type="text" id="registerFirstName" placeholder="First Name" />
+			<input type="text" id="registerLastName" placeholder="Last Name" />
+			<button onclick="registerUser()">Register</button>
+		</div>
+
+		<!-- Login Section -->
+		<div class="section" id="loginSection">
+			<h2>Login</h2>
+			<input type="text" id="loginFirstName" placeholder="First Name" />
+			<input type="text" id="loginLastName" placeholder="Last Name" />
+			<button onclick="loginUser()">Login</button>
+		</div>
+
+	</div>
+		<!-- Chat Section -->
+		<div class="section" id="chatSection" style="display: none">
+			<h2>Chat</h2>
+			<div id="loggedInUser">
+				<img id="userAvatar" src="" alt="User Avatar" />
+				<span id="userName">Hi, User Name</span>
+			</div>
+
+
+			<div class="chat-container">
+				<div id="userList">
+					<h3>Users</h3>
+					<ul id="userListItems"></ul>
+				</div>
+				<div id="chatBox">
+					<div class="selectedUserHeader">
+						<div class="selectedUserLeft">
+							<img src="https://images.squarespace-cdn.com/content/v1/6058f3b0dbb27b03bbd36be9/1616442358690-OQOD2XFTAP3I4PYM9QLR/Screen+Shot+2021-02-23+at+9.35.43+PM.png"  id="call-icon">
+							<p id="selectedUserIdHeader">Name</p>
+						</div>
+						<div class="selectedUserRight">
+							<img src="./assets/call.png"  id="call-icon">
+							<img src="./assets/video.png"  id="call-icon" alt="">
+						</div>
+
+
+					</div>
+					<div id="messages"></div>
+					<form id="chatForm">
+						<input
+							type="text"
+							id="messageInput"
+							placeholder="Enter message"
+							required
+						/>
+						<button type="submit" id="sendButton">Send</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script src="index.js"></script>
+	</body>
+</html>
