@@ -73,9 +73,10 @@ function loginUser() {
 			userId = user.id;
 			alert("Logged in as " + user.first_name + " " + user.last_name);
 
-			document.getElementById(
-				"loggedInUser"
-			).textContent = `Hi, ${user.first_name} ${user.last_name}`;
+			document.getElementById("loggedInUser").innerHTML = `
+			<img id="userAvatar" src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa44f58da-a39d-4e71-807b-9332c39a2be1_976x549.jpeg" alt="User Avatar" />
+			<span id="userName">Hi, ${user.first_name} ${user.last_name}</span>
+		`;
 			document.getElementById("registerSection").style.display = "none";
 			document.getElementById("loginSection").style.display = "none";
 			document.getElementById("chatSection").style.display = "block";
@@ -97,22 +98,42 @@ function fetchUsers() {
 }
 
 function updateUserList() {
-	var userListItems = document.getElementById("userListItems");
-	userListItems.innerHTML = "";
-	users.forEach((user) => {
-		if (user.id === userId) return;
+    var userListItems = document.getElementById("userListItems");
+    userListItems.innerHTML = "";
+    users.forEach((user) => {
+        if (user.id === userId) return;
 
-		var listItem = document.createElement("li");
-		listItem.textContent = `${user.first_name} ${user.last_name}`;
-		listItem.style.cursor = "pointer";
-		listItem.onclick = function () {
-			selectedUserId = user.id;
-			highlightSelectedUser(listItem);
-			fetchMessagesForUser(selectedUserId);
-		};
-		userListItems.appendChild(listItem);
-	});
+        var listItem = document.createElement("li");
+        listItem.style.cursor = "pointer";
+        listItem.onclick = function () {
+            selectedUserId = user.id;
+            highlightSelectedUser(listItem);
+            fetchMessagesForUser(selectedUserId);
+
+			document.getElementById("selectedUserIdHeader").innerText = user.first_name
+        };
+
+        // Create an image element for the avatar
+        var avatar = document.createElement("img");
+        avatar.src = 'https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg';  // assuming `avatarUrl` contains the link to the user's avatar image
+        avatar.alt = `${user.first_name} ${user.last_name}'s Avatar`;
+        avatar.style.width = "40px";  // adjust size as needed
+        avatar.style.height = "40px"; // adjust size as needed
+        avatar.style.marginRight = "10px";  // space between the avatar and the name
+
+        // Create a span for the user's name
+        var userName = document.createElement("span");
+        userName.textContent = `${user.first_name} ${user.last_name}`;
+
+        // Append the avatar and name to the list item
+        listItem.appendChild(avatar);
+        listItem.appendChild(userName);
+
+        // Append the list item to the user list
+        userListItems.appendChild(listItem);
+    });
 }
+
 
 function highlightSelectedUser(selectedElement) {
 	const listItems = document.querySelectorAll("#userListItems li");
@@ -151,6 +172,9 @@ function displayMessages(messages) {
 	messages.forEach((message) => {
 		var messageElement = document.createElement("div");
 		messageElement.classList.add("message");
+		if(selectedUserId == message.sender_id){
+			messageElement.classList.add("message-right");
+		}
 		messageElement.textContent = `${message.content}`;
 		messageContainer.appendChild(messageElement);
 	});
