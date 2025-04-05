@@ -1,0 +1,1 @@
+/home/oni-chan/pyprojects/ProgrammingLanguage/SimpleChatApplication/rust/target/debug/client: /home/oni-chan/pyprojects/ProgrammingLanguage/SimpleChatApplication/rust/src/client.rs /home/oni-chan/pyprojects/ProgrammingLanguage/SimpleChatApplication/rust/src/common.rs

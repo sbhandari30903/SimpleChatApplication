@@ -1,0 +1,11 @@
+/home/oni-chan/pyprojects/ProgrammingLanguage/SimpleChatApplication/rust/target/debug/deps/libsocket2-e72bfae812f39fc3.rmeta: /home/oni-chan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.9/src/lib.rs /home/oni-chan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.9/src/sockaddr.rs /home/oni-chan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.9/src/socket.rs /home/oni-chan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.9/src/sockref.rs /home/oni-chan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.9/src/sys/unix.rs
+
+/home/oni-chan/pyprojects/ProgrammingLanguage/SimpleChatApplication/rust/target/debug/deps/libsocket2-e72bfae812f39fc3.rlib: /home/oni-chan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.9/src/lib.rs /home/oni-chan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.9/src/sockaddr.rs /home/oni-chan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.9/src/socket.rs /home/oni-chan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.9/src/sockref.rs /home/oni-chan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.9/src/sys/unix.rs
+
+/home/oni-chan/pyprojects/ProgrammingLanguage/SimpleChatApplication/rust/target/debug/deps/socket2-e72bfae812f39fc3.d: /home/oni-chan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.9/src/lib.rs /home/oni-chan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.9/src/sockaddr.rs /home/oni-chan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.9/src/socket.rs /home/oni-chan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.9/src/sockref.rs /home/oni-chan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.9/src/sys/unix.rs
+
+/home/oni-chan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.9/src/lib.rs:
+/home/oni-chan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.9/src/sockaddr.rs:
+/home/oni-chan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.9/src/socket.rs:
+/home/oni-chan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.9/src/sockref.rs:
+/home/oni-chan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.9/src/sys/unix.rs:
