@@ -91,6 +91,10 @@ rustchatapp/
 │   ├── messages.rs    # Message handling
 │   └── users.rs       # User management
 └── Cargo.toml         # Dependencies and project config
+└── ui/
+    ├── index.html   # Web client interface
+    ├── index.css    # Styles for web client
+    └── index.js     # Client-side JavaScript
 ```
 
 ## Dependencies
