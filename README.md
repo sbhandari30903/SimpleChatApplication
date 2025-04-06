@@ -32,7 +32,7 @@ cargo build
 
 3. Run the server:
 ```bash
-cargo run
+RUST_LOG=info cargo run
 ```
 
 The server will start at `http://127.0.0.1:8082`
