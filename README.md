@@ -46,6 +46,12 @@ The server will start at `http://127.0.0.1:8082`
 - `GET /ws` - WebSocket connection endpoint
 - `GET /messages` - Get chat history
 
+### UI 
+- cd ui
+- open index.html in your browser
+- Register a user
+- login as the registered user
+
 ### Example Usage
 
 ```bash
@@ -129,7 +135,7 @@ go mod download
 go run main.go
 ```
 
-The server will start at `http://localhost:8080`
+The server will start at `http://localhost:8082`
 
 ### Project Structure
 
@@ -157,16 +163,22 @@ realtimechat/
 - `GET /ws` - WebSocket connection endpoint
 - `GET /messages` - Get chat history
 
+### UI 
+- cd ui
+- open index.html in your browser
+- Register a user
+- login as the registered user
+
 ### Example Usage
 
 ```bash
 # Register a new user
-curl -X POST http://localhost:8080/register \
+curl -X POST http://localhost:8082/register \
   -H "Content-Type: application/json" \
   -d '{"firstName":"John","lastName":"Doe"}'
 
 # Login
-curl -X POST http://localhost:8080/login \
+curl -X POST http://localhost:8082/login \
   -H "Content-Type: application/json" \
   -d '{"firstName":"John","lastName":"Doe"}'
 ```
